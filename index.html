@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secret Encoder / Decoder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Secret Message Encoder / Decoder</h1>
+
+    <textarea id="inputText" placeholder="Enter your message here..."></textarea>
+
+    <div class="controls">
+      <select id="method">
+        <option value="caesar">Caesar Cipher</option>
+        <option value="reverse">Reverse Text</option>
+        <option value="emoji">Emoji Code</option>
+      </select>
+
+      <button onclick="encode()">Encode 🔐</button>
+      <button onclick="decode()">Decode 🔓</button>
+      <button onclick="copyResult()">📋</button>
+      <button onclick="clearAll()">Clear</button>
+    </div>
+
+    <textarea id="outputText" placeholder="Your result will appear here..." readonly></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
